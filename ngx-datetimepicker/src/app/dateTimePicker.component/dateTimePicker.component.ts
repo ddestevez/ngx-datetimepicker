@@ -4,10 +4,9 @@ import { DateService, dayOfTheMonth } from '../services/date.service';
 
 @Component({
     selector: 'ngx-datetime-picker',
-    templateUrl: './datetimepicker.component.html',
+    templateUrl: './dateTimepicker.component.html',
     encapsulation: ViewEncapsulation.None,
 })
-
 export class DateTimePickerComponent implements OnInit {
     @Input() selectedDateTime: Date;
     @Output() selectedDateTimeChange = new EventEmitter<Date>();
